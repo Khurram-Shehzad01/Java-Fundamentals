@@ -12,7 +12,7 @@ public static void main(String[] args) {
     employee.setDetails("Hafiz Faisal",24,2);
     System.out.println(employee.name + " " + employee.age+" "+ employee.empID);
   }
-  static class employee{
+   static class employee{
     static String name;
     static int age;
     static int empID;
@@ -25,3 +25,7 @@ public static void main(String[] args) {
 
   }
 }
+/*
+**************************************************----------Note------------***************************
+we make static methods so that we can access them without creating the object of class which they belong to
+ */
