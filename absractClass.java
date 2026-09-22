@@ -14,8 +14,9 @@ public class absractClass {
         animal b = new Dog();
         b.eat();
     }
+}
 
-    static abstract class animal {
+     abstract class animal {
         abstract void eat();
 
         abstract void sleep();
@@ -23,7 +24,7 @@ public class absractClass {
         abstract void walk();
     }
 
-   static class Cat extends animal {
+    class Cat extends animal {
         void eat() {
             System.out.println("cat eats");
         }
@@ -37,7 +38,7 @@ public class absractClass {
         }
     }
 
-   static class Dog extends animal {
+    class Dog extends animal {
         @Override
         void eat() {
             System.out.println("dog eats bones");
@@ -54,7 +55,7 @@ public class absractClass {
         }
     }
 
-    static class Fish extends animal {
+     class Fish extends animal {
         @Override
         void eat() {
             System.out.println("fish eats in the occeans");
@@ -71,7 +72,7 @@ public class absractClass {
         }
     }
 
-    static class panda extends animal {
+     class panda extends animal {
         @Override
         void eat() {
             System.out.println("panda eats ");
@@ -87,4 +88,3 @@ public class absractClass {
             System.out.println("panda walks");
         }
     }
-}
