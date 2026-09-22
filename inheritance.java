@@ -10,6 +10,7 @@ public class inheritance {
     * 4--multiples-----java does not support it
      */
     public static void main(String[] args) {
+
         child c = new child();
         c.display();
         c.display1();
@@ -26,6 +27,7 @@ public class inheritance {
     }
     }
     class child extends inheritance{
+
         void display(){
             System.out.println("I am from child class");
     }

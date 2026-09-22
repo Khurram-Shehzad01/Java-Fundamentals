@@ -2,7 +2,7 @@ public class staticVariables {
 /*
 static keyword
 The static keyword or variables means the member belongs to the class itself, not to any specific object (instance) of the class.we can call it by class
-i.e "student.collge".static variable will be shared among all objects of the class.
+i.e "student.collge".static variable will be shared among all objects of the class.static variable cannot be pointed to any object
  */
     public  void main(String[] args) {
         student.college = "KIPS College";
