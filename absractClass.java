@@ -11,17 +11,20 @@ public class absractClass {
         a.eat();
         a.sleep();
         a.walk();
+
+
         animal b = new Dog();
         b.eat();
     }
 }
 
-     abstract class animal {
+    abstract class animal {
         abstract void eat();
 
         abstract void sleep();
 
         abstract void walk();
+        final int age = 23;
     }
 
     class Cat extends animal {
@@ -55,7 +58,7 @@ public class absractClass {
         }
     }
 
-     class Fish extends animal {
+    class Fish extends animal {
         @Override
         void eat() {
             System.out.println("fish eats in the occeans");
@@ -72,7 +75,7 @@ public class absractClass {
         }
     }
 
-     class panda extends animal {
+    class panda extends animal {
         @Override
         void eat() {
             System.out.println("panda eats ");
@@ -88,3 +91,12 @@ public class absractClass {
             System.out.println("panda walks");
         }
     }
+
+
+/*
+ ******************************************************------------------------interview questions-------------------***********************************
+ * ---can  a abstarct class be final--------------> no
+ * ---can a abstract class be static ------------->yes
+ * ---can a abstract class have final variables/methods---yes
+ * can a abstract class have constructor ---->yes
+ */
