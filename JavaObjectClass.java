@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class JavaObjectClass {
     public static void main(String[] args) {
-        OM a = new OM("Khurram");
+        OM a = new OM("Khurram Shehzad");
         String str = a.toString();
         System.out.println(str);           //-----------------------------------toString()
         OM b = new OM("Khurram");
@@ -11,6 +11,8 @@ public class JavaObjectClass {
         System.out.println(a.hashCode()==b.hashCode());//---------------------------hashcode()
         System.out.println(b.getClass().getName()+a.getClass().getName());//-------------------------------getClass()
 
+        OM oc =(OM)a.clone();             //clone() method
+        System.out.println(oc.name); //overriding output
     }
 }
 class OM{
@@ -34,7 +36,10 @@ class OM{
         return Objects.hash(this.name+kyword+str.hashCode());
     }
 
-
+    @Override
+    public Object clone() {
+        return new OM(this.name+this.str+this.kyword);
+    }
 }
 /*
 java object class is the parent class of all classes we create , inside compiler all classes extends to Object class
