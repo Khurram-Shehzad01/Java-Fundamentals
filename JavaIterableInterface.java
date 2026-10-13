@@ -7,7 +7,8 @@ public class JavaIterableInterface {
         Iterator i = nc.iterator();
         while (i.hasNext()) {
             System.out.println(i.next());
-        }
+
+       }
     }
 }
 
@@ -38,5 +39,9 @@ class NamesContainer implements Iterable<String> {
 
 /*
   Every collection framework of java implements Iterable interface we will se an example whre we
-  implements iterable interface ,it has method
+  implements iterable interface ,it has method which is used to perform function
+
+  ---hasNext()
+  ---next()
+  ---remove()
  */
