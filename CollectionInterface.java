@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class CollectionClass {
+public class CollectionInterface {
     public static void main(String[] args) {
         Collection<String> cs = new ArrayList<String>();
         cs.add("A");

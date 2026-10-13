@@ -10,7 +10,7 @@ public class ListCF {
         list.addAll(List.of(3,4));
 //        final Integer it = list.get(list.lastIndexOf(4));
 
-        System.out.println(it);
+       // System.out.println(it);
         for(Integer i : list) {
             System.out.println(i);
         }
